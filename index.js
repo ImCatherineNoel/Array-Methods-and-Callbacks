@@ -1,23 +1,91 @@
 import { fifaData } from './fifa.js';
-console.log(fifaData);
+// console.log(fifaData);
 
-console.log('its working');
+// console.log('its working');
 // ⚽️ M  V P ⚽️ //
 
-/* Task 1: Investigate the data above. Practice accessing data by console.log-ing the following pieces of data 
+//Task 1: Investigate the data above. Practice accessing data by console.log-ing the following pieces of data 
+//(a) Home Team name for 2014 world cup final
+        function task1A(myArray){
+            let index = 0;
+            for (index in myArray){
+            if (myArray[index].Year == 2014 && myArray[index].Stage =="Final"){
+                return(fifaData[index]["Home Team Name"]);
+                index++;
+            }    
+            else  {
+                index++;
+            }
+            }
+            }
+            console.log(task1A(fifaData));
 
-(a) Home Team name for 2014 world cup final
-(b) Away Team name for 2014 world cup final
-(c) Home Team goals for 2014 world cup final
-(d) Away Team goals for 2014 world cup final
-(e) Winner of 2014 world cup final */
+//(b) Away Team name for 2014 world cup final
+        function task1B(myArray){
+            let index = 0;
+            for (index in myArray){
+            if (myArray[index].Year == 2014 && myArray[index].Stage =="Final"){
+                return(fifaData[index]["Away Team Name"]);
+                index++;
+            }    
+            else  {
+                index++;
+            }
+            }
+            }
+            console.log(task1B(fifaData));
+
+//(c) Home Team goals for 2014 world cup final
+        function task1C(myArray){
+            let index = 0;
+            for (index in myArray){
+            if (myArray[index].Year == 2014 && myArray[index].Stage =="Final"){
+                return(fifaData[index]["Home Team Goals"]);
+                index++;
+            }    
+            else  {
+                index++;
+            }
+            }
+            }
+            console.log(task1C(fifaData));
+
+//(d) Away Team goals for 2014 world cup final
+        function task1D(myArray){
+            let index = 0;
+            for (index in myArray){
+            if (myArray[index].Year == 2014 && myArray[index].Stage =="Final"){
+                return(fifaData[index]["Away Team Goals"]);
+                index++;
+            }    
+            else  {
+                index++;
+            }
+            }
+            }
+            console.log(task1D(fifaData));
+
+//(e) Winner of 2014 world cup final
+        function task1E(myArray){
+            let index = 0;
+            for (index in myArray){
+            if (myArray[index].Year == 2014 && myArray[index].Stage =="Final"){
+                return(fifaData[index]["Win conditions"]);
+                index++;
+            }    
+            else  {
+                index++;
+            }
+            }
+            }
+            console.log(task1E(fifaData));
 
 
 /* Task 2: Create a function called  getFinals that takes `data` as an argument and returns an array of objects with only finals data */
 
-function getFinals(/* code here */) {
+function getFinals(data) {
 
-    /* code here */
+    
 
 };
 
